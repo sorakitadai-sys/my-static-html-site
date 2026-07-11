@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>日向坂46 おひさま診断クイズ</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; background-color: #e6f2ff; }
+        .quiz-container { background-color: white; width: 60%; margin: 30px auto; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #00bfff; }
+        .question { margin: 20px 0; text-align: left; padding: 0 20px; }
+        input[type="submit"] { padding: 10px 20px; font-size: 18px; background-color: #00bfff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        input[type="submit"]:hover { background-color: #0099cc; }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>日向坂46 おひさま診断クイズ</h1>
+        <form action="/grade" method="POST">
+            
+            <div class="question">
+                <p><strong>第1問：日向坂46の17thシングルのタイトルは？</strong></p>
+                <input type="radio" name="q1" value="kurihu" id="q1_1" required> <label for="q1_1">クリフハンガー</label><br>
+                <input type="radio" name="q1" value="bahha" id="q1_2"> <label for="q1_2">お願いバッハ</label><br>
+                <input type="radio" name="q1" value="kindoflove" id="q1_3"> <label for="q1_3">kind of love</label>
+            </div>
+
+            <div class="question">
+                <p><strong>第2問：日向坂46の17thシングルのセンターは？</strong></p>
+                </strong></p>
+                <input type="radio" name="q2" value="kosaka" id="q2_1" required> <label for="q2_1">小坂菜緒</label><br>
+                <input type="radio" name="q2" value="kaho" id="q2_2"> <label for="q2_2">藤嶌果歩</label><br>
+                <input type="radio" name="q2" value="oono" id="q2_3"> <label for="q2_3">大野愛美</label>
+            </div>
+
+            <div class="question">
+                <p><strong>第3問：日向坂46のファンの総称は？</strong></p>
+                <input type="radio" name="q3" value="buddies" id="q3_1" required> <label for="q3_1">Buddies</label><br>
+                <input type="radio" name="q3" value="ohisama" id="q3_2"> <label for="q3_2">おひさま</label><br>
+                <input type="radio" name="q3" value="nogi" id="q3_3"> <label for="q3_3">乃木オタ</label>
+            </div>
+
+            <br>
+            <input type="submit" value="採点する！">
+        </form>
+    </div>
+</body>
+</html>

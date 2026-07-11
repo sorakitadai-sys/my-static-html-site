@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>採点結果</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; background-color: #e6f2ff; }
+        .result-container { background-color: white; width: 60%; margin: 30px auto; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #00bfff; }
+        .score { font-size: 24px; font-weight: bold; margin: 20px 0; color: #ff6600; }
+        .rank { font-size: 28px; font-weight: bold; margin: 20px 0; color: #ff0066; }
+        .comment { font-size: 18px; line-height: 1.6; }
+        a { display: inline-block; margin-top: 30px; text-decoration: none; background-color: #cccccc; padding: 10px 20px; border-radius: 5px; color: black; }
+        a:hover { background-color: #bbbbbb; }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>採点結果</h1>
+        
+        <div class="score">
+            あなたの正解数： <%= score %> / 3 問
+        </div>
+        
+        <div class="rank">
+            ランク： <%= rank %>
+        </div>
+        
+        <div class="comment">
+            <p><%= comment %></p>
+        </div>
+
+        <a href="/">← クイズのトップに戻る</a>
+    </div>
+</body>
+</html>
